@@ -21,7 +21,7 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="sUR-lZ-2hQ">
                                 <rect key="frame" x="0.0" y="47" width="428" height="845"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Wrk-Wj-6ps">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Wrk-Wj-6ps">
                                     <size key="itemSize" width="428" height="140"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -43,19 +43,19 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ckL-DY-XDa">
-                                                    <rect key="frame" x="116" y="30" width="39" height="24.333333333333329"/>
+                                                    <rect key="frame" x="116" y="30" width="39" height="26.333333333333329"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apr 4" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B9m-UI-je7">
-                                                    <rect key="frame" x="367.66666666666669" y="59.333333333333336" width="44.333333333333314" height="21.666666666666664"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="대화내용" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xSG-e5-kNQ">
+                                                    <rect key="frame" x="115.99999999999999" y="61.333333333333336" width="62.333333333333329" height="21.666666666666664"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="대화내용" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xSG-e5-kNQ">
-                                                    <rect key="frame" x="115.99999999999999" y="59.333333333333336" width="62.333333333333329" height="21.666666666666664"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apr 4" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B9m-UI-je7">
+                                                    <rect key="frame" x="367.66666666666669" y="59.333333333333336" width="44.333333333333314" height="21.666666666666664"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -66,7 +66,6 @@
                                                 <constraint firstItem="Cee-3N-I0b" firstAttribute="leading" secondItem="vez-j3-Ley" secondAttribute="leading" constant="16" id="Em0-s0-isy"/>
                                                 <constraint firstItem="B9m-UI-je7" firstAttribute="centerY" secondItem="vez-j3-Ley" secondAttribute="centerY" id="Mw3-KU-tpF"/>
                                                 <constraint firstAttribute="trailing" secondItem="B9m-UI-je7" secondAttribute="trailing" constant="16" id="W25-Pp-63Q"/>
-                                                <constraint firstItem="xSG-e5-kNQ" firstAttribute="centerY" secondItem="vez-j3-Ley" secondAttribute="centerY" id="e42-je-KyA"/>
                                                 <constraint firstItem="B9m-UI-je7" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="xSG-e5-kNQ" secondAttribute="trailing" constant="10" id="foI-7E-Y8X"/>
                                                 <constraint firstItem="ckL-DY-XDa" firstAttribute="top" secondItem="Cee-3N-I0b" secondAttribute="top" id="koJ-gz-9Ub"/>
                                                 <constraint firstItem="xSG-e5-kNQ" firstAttribute="leading" secondItem="ckL-DY-XDa" secondAttribute="leading" id="pmq-JE-6TV"/>
