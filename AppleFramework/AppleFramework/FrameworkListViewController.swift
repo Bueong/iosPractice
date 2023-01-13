@@ -46,9 +46,28 @@ extension FrameworkListViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
+//        과제
+//
+//        2열 일때
+//        let interItemSpacing: CGFloat = 10
+//        let padding: CGFloat = 16
+//
+//        let width = (collectionView.bounds.width - interItemSpacing * 1 - padding * 2) / 2
+//        let height = width * 1.5
+//        return CGSize(width: width, height: height)
+        
+//        4열 일때
+//        let interItemSpacing: CGFloat = 10
+//        let padding: CGFloat = 16
+//
+//        let width = (collectionView.bounds.width - interItemSpacing * 3 - padding * 2) / 4
+//        let height = width * 1.5
+//        return CGSize(width: width, height: height)
+        
+        
         let interItemSpacing: CGFloat = 10
         let padding: CGFloat = 16
-        
+
         let width = (collectionView.bounds.width - interItemSpacing * 2 - padding * 2) / 3
         let height = width * 1.5
         return CGSize(width: width, height: height)
