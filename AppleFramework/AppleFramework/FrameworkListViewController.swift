@@ -17,6 +17,8 @@ class FrameworkListViewController: UIViewController {
         collectionView.dataSource = self
         collectionView.delegate = self
         
+        navigationController?.navigationBar.topItem?.title = "☀️ Apple Frameworks"
+        
         if let flowlayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
             flowlayout.estimatedItemSize = .zero
         }
