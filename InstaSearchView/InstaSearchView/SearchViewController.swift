@@ -28,12 +28,24 @@ extension SearchViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        return UICollectionViewCell()
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ResultCell", for: indexPath) as? ResultCell else {
+            return UICollectionViewCell()
+        }
+        let imageName = "animal\(indexPath.item + 1)"
+        cell.configure(imageName)
+        return cell
     }
-    
-    
 }
 
 extension SearchViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let interItemSpacing: CGFloat = 1
+        let width = (collectionView.bounds.width - interItemSpacing * 2) / 3
+        let height = width
+        return CGSize(width: width, height: height)
+    }
     
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 1
+    }
 }
