@@ -90,7 +90,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="5J8-O1-kNn">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FeedCell" id="5J8-O1-kNn" customClass="FeedCell" customModule="InstaSearchView" customModuleProvider="target">
                                         <rect key="frame" x="0.5" y="0.0" width="413" height="367"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="4bN-qK-fRj">
@@ -135,6 +135,9 @@
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="413" height="367"/>
+                                        <connections>
+                                            <outlet property="thumbnailImageView" destination="nbD-QA-43z" id="dvn-QA-Pee"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -149,6 +152,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="house" catalog="system" id="wec-9f-Ibz"/>
+                    <connections>
+                        <outlet property="collectionView" destination="QX7-Fz-5a1" id="02h-bX-bz8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dzb-nm-BUC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
