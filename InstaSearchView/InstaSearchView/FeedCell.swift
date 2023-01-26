@@ -20,3 +20,4 @@ class FeedCell: UICollectionViewCell {
         thumbnailImageView.image = UIImage(named: imageName)
     }
 }
+

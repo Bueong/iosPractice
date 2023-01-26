@@ -31,7 +31,7 @@ extension NewsFeedViewController: UICollectionViewDataSource {
         
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FeedCell", for: indexPath) as? FeedCell else {
             return UICollectionViewCell()
-        }
+        } 
         
         let imageName = "animal\(indexPath.item + 1)"
         cell.configure(imageName)
