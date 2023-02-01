@@ -7,7 +7,7 @@ class FrameworkListViewController: UIViewController {
     
     let list: [AppleFramework] = AppleFramework.list
     
-    var dataSource: UICollectionViewDiffableDataSource<Section, Item>!
+    var dataSource: UICollectionViewDiffableD.ataSource<Section, Item>!
     typealias Item = AppleFramework
     enum Section {
         case main
