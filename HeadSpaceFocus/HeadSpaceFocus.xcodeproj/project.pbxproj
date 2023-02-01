@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E58020E298AFE5600127AC1 /* FocusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E58020D298AFE5600127AC1 /* FocusCell.swift */; };
+		5EDBF9B7298AFA1000ACE498 /* FocusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDBF9B6298AFA1000ACE498 /* FocusViewController.swift */; };
 		943BB54328150EFA005A1B6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943BB54228150EFA005A1B6E /* AppDelegate.swift */; };
 		943BB54528150EFA005A1B6E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943BB54428150EFA005A1B6E /* SceneDelegate.swift */; };
 		943BB54A28150EFA005A1B6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 943BB54828150EFA005A1B6E /* Main.storyboard */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5E58020D298AFE5600127AC1 /* FocusCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusCell.swift; sourceTree = "<group>"; };
+		5EDBF9B6298AFA1000ACE498 /* FocusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusViewController.swift; sourceTree = "<group>"; };
 		943BB53F28150EFA005A1B6E /* HeadSpaceFocus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeadSpaceFocus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		943BB54228150EFA005A1B6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		943BB54428150EFA005A1B6E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +106,8 @@
 				943BB54228150EFA005A1B6E /* AppDelegate.swift */,
 				943BB54428150EFA005A1B6E /* SceneDelegate.swift */,
 				943BB57628151183005A1B6E /* Focus.swift */,
+				5EDBF9B6298AFA1000ACE498 /* FocusViewController.swift */,
+				5E58020D298AFE5600127AC1 /* FocusCell.swift */,
 				943BB54828150EFA005A1B6E /* Main.storyboard */,
 				943BB54B28150EFB005A1B6E /* Assets.xcassets */,
 				943BB54D28150EFB005A1B6E /* LaunchScreen.storyboard */,
@@ -260,7 +266,9 @@
 			files = (
 				943BB57728151183005A1B6E /* Focus.swift in Sources */,
 				943BB54328150EFA005A1B6E /* AppDelegate.swift in Sources */,
+				5E58020E298AFE5600127AC1 /* FocusCell.swift in Sources */,
 				943BB54528150EFA005A1B6E /* SceneDelegate.swift in Sources */,
+				5EDBF9B7298AFA1000ACE498 /* FocusViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
