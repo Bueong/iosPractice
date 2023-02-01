@@ -1,13 +1,6 @@
-//
-//  FramewokData.swift
-//  AppleFramework
-//
-//  Created by joonwon lee on 2022/04/22.
-//
-
 import Foundation
 
-struct AppleFramework {
+struct AppleFramework: Hashable {
     let name: String
     let imageName: String
     let urlString: String

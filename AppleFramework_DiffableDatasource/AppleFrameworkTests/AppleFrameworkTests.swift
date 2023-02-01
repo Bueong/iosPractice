@@ -1,10 +1,3 @@
-//
-//  AppleFrameworkTests.swift
-//  AppleFrameworkTests
-//
-//  Created by joonwon lee on 2022/04/22.
-//
-
 import XCTest
 @testable import AppleFramework
 

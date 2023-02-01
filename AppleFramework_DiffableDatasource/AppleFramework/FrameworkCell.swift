@@ -1,10 +1,3 @@
-//
-//  FrameworkCell.swift
-//  AppleFramework
-//
-//  Created by joonwon lee on 2022/04/24.
-//
-
 import UIKit
 
 class FrameworkCell: UICollectionViewCell {
