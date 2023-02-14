@@ -44,6 +44,9 @@ class PaywallViewController: UIViewController {
         datasource.apply(snapshot)
         
         collectionView.collectionViewLayout = layout()
+        collectionView.alwaysBounceVertical = false
+        
+        pageControl.numberOfPages = bannerInfos.count
     }
     
     private func layout() -> UICollectionViewCompositionalLayout {
@@ -56,6 +59,12 @@ class PaywallViewController: UIViewController {
         let section = NSCollectionLayoutSection(group: group)
         section.orthogonalScrollingBehavior = .groupPagingCentered
         section.interGroupSpacing = 20
+        
+        section.visibleItemsInvalidationHandler = { (item, offset, env) in
+            let index = Int((offset.x / env.container.contentSize.width).rounded(.up))
+            
+            self.pageControl.currentPage = index
+        }
 
         let layout = UICollectionViewCompositionalLayout(section: section)
         return layout
