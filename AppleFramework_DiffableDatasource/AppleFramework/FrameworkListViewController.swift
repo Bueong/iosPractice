@@ -7,7 +7,7 @@ class FrameworkListViewController: UIViewController {
     
     let list: [AppleFramework] = AppleFramework.list
     
-    var dataSource: UICollectionViewDiffableD.ataSource<Section, Item>!
+    var dataSource: UICollectionViewDiffableDataSource<Section, Item>!
     typealias Item = AppleFramework
     enum Section {
         case main
@@ -31,6 +31,8 @@ class FrameworkListViewController: UIViewController {
         dataSource.apply(snapshot)
         
         collectionView.collectionViewLayout = layout()
+        
+        collectionView.delegate = self
     }
     
     private func layout() -> UICollectionViewCompositionalLayout {
