@@ -86,8 +86,11 @@ class FocusViewController: UIViewController {
 @available(iOS 16.0, *)
 extension FocusViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let item = items[indexPath.item]
+        
         let storyboard = UIStoryboard(name: "QuickFocus", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "QuickFocusListViewController") as! QuickFocusListViewController
-        present(vc, animated: true)
+        vc.title = item.title
+        navigationController?.pushViewController(vc, animated: true)
     }
 }

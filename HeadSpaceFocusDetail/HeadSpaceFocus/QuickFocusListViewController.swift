@@ -58,6 +58,8 @@ class QuickFocusListViewController: UIViewController {
         datasource.apply(snapshot)
         
         collectionView.collectionViewLayout = layout()
+        
+        self.navigationItem.largeTitleDisplayMode = .never
     }
     
     private func layout() -> UICollectionViewCompositionalLayout{
