@@ -25,8 +25,9 @@ class MyClass {
 
 let object = MyClass()
 let subscription3 = arrayPublisher.assign(to: \.property, on: object)
+print("Final Value = \(object.property)")
 
-object.property = 3
+//object.property = 3
 
 
 //: [Next](@next)
