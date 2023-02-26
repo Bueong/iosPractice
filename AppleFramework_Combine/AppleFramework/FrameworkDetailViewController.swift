@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Combine
 import SafariServices
 
 class FrameworkDetailViewController: UIViewController {
@@ -14,28 +15,35 @@ class FrameworkDetailViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     
-    var framework: AppleFramework = AppleFramework(name: "Unknown", imageName: "", urlString: "", description: "")
+    var subscriptions = Set<AnyCancellable>()
+    var buttonTapped = PassthroughSubject<AppleFramework, Never>()
+    let framework = CurrentValueSubject<AppleFramework, Never>(AppleFramework(name: "Unknown", imageName: "", urlString: "", description: ""))
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        updateUI()
+        bind()
     }
     
-    func updateUI() {
-        imageView.image = UIImage(named: framework.imageName)
-        titleLabel.text = framework.name
-        descriptionLabel.text = framework.description
+    private func bind() {
+        //input : Button 클릭
+        buttonTapped
+            .receive(on: RunLoop.main)
+            .compactMap { URL(string: $0.urlString) }
+            .sink { [unowned self] url in
+                let safari = SFSafariViewController(url: url)
+                self.present(safari, animated: true)
+            }.store(in: &subscriptions)
+        
+        //output : Data 세팅 완료 후 UI 업데이트
+        framework
+            .receive(on: RunLoop.main)
+            .sink { [unowned self] framework in
+                self.imageView.image = UIImage(named: framework.imageName)
+                self.titleLabel.text = framework.name
+                self.descriptionLabel.text = framework.description
+            }.store(in: &subscriptions)
     }
-    
     
     @IBAction func learnMoreTapped(_ sender: Any) {
-        
-        guard let url = URL(string: framework.urlString) else {
-            return
-        }
-        
-        let safari = SFSafariViewController(url: url)
-        
-        present(safari, animated: true)
-    }
+        buttonTapped.send(framework.value)    }
 }
