@@ -39,16 +39,14 @@ let task = session.dataTask(with: url) { data, response, error in
     do {
         let decoder = JSONDecoder()
         let profile = try decoder.decode(GithubProfile.self, from: data)
+        print("profile: \(profile)")
     } catch let error as NSError{
         print("error: \(error)")
     }
-    
-    let result = String(data: data, encoding: .utf8)
-    print(result)
 }
 
 task.resume()
-
+print(task)
 
 
 
