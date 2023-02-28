@@ -12,12 +12,11 @@ let url = URL(string: "https://api.github.com/users/bueong")!
 let task = session.dataTask(with: url) { data, response, error in
     guard let httpResponse = response as? HTTPURLResponse,
           (200..<300).contains(httpResponse.statusCode) else {
-              print("--> response \(response)")
-              return
-          }
+        print("--> response \(response)")
+        return
+        }
     
     guard let data = data else { return }
-    
     let result = String(data: data, encoding: .utf8)
     print(result)
 }
