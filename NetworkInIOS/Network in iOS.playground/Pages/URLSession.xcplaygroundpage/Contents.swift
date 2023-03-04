@@ -7,7 +7,7 @@ import Foundation
 let configuration = URLSessionConfiguration.default
 let session = URLSession(configuration: configuration)
 
-let url = URL(string: "https://api.github.com/users/bueong")!
+let url = URL(string: "https://api.github.com/users/E4gleOwl")!
 
 let task = session.dataTask(with: url) { data, response, error in
     guard let httpResponse = response as? HTTPURLResponse,

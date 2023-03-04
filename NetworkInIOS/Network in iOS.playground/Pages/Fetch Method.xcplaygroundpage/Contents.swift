@@ -67,7 +67,18 @@ final class NetworkService {
     }
 }
 
-// network
+// network 담당 NetworkService
+
+let networkService = NetworkService(configuration: .default)
+
+networkService.fetchProfile(userName: "E4gleOwl") { result in
+    switch result {
+    case .success(let profile):
+        print("Profile: \(profile)")
+    case .failure(let error):
+        print("Error: \(error)")
+    }
+}
 
 
 
