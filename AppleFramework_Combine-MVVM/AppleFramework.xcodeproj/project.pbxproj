@@ -88,6 +88,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E01424A29BDFD5100D5BF30 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5E6A149729BB8C07008EE899 /* FrameworkListViewModel.swift */,
+				5E6A149929BB8C15008EE899 /* FrameworkDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		5E6A149529BB8BDA008EE899 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,8 +142,7 @@
 			children = (
 				948CD1EA2812AD5E003DC0C4 /* AppDelegate.swift */,
 				948CD1EC2812AD5E003DC0C4 /* SceneDelegate.swift */,
-				5E6A149729BB8C07008EE899 /* FrameworkListViewModel.swift */,
-				5E6A149929BB8C15008EE899 /* FrameworkDetailViewModel.swift */,
+				5E01424A29BDFD5100D5BF30 /* ViewModel */,
 				5E6A149629BB8BE2008EE899 /* Model */,
 				5E6A149529BB8BDA008EE899 /* View */,
 				948CD1F32812AD5F003DC0C4 /* Assets.xcassets */,
