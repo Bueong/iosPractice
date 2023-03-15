@@ -15,30 +15,39 @@ struct SymbolRollerView: View {
     
     var body: some View {
         VStack {
+            
+            Spacer()
+            
             Image(systemName: imageName)
                 .renderingMode(.template)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .padding()
+                .padding(80)
+            
+            Spacer()
             
             Text(imageName)
                 .font(.system(size: 40, weight: .bold))
             
             Button {
                 print("Button Tapped")
+                imageName = symbols.randomElement()!
             } label: {
                 HStack {
                     Image(systemName: "arrow.3.trianglepath")
                     
                     VStack {
                         Text("Reload")
-                        Text("Reload")
+                            .font(.system(size: 30, weight: .bold, design: .default))
+                        Text("click me to reload")
                     }
                 }
             }
+            .foregroundColor(.white)
             .frame(maxWidth: .infinity, minHeight: 80)
-            .background(.yellow)
+            .background(.pink)
             .cornerRadius(40)
+            .padding(30)
         }
     }
 }
