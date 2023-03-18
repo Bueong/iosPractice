@@ -13,7 +13,7 @@ struct StockRankView: View {
     
     var body: some View {
         
-        List(list, id:\.self) { item in
+        List(list) { item in
             StockRankRow(stock: item)
                 .listRowInsets(EdgeInsets())
                 .listRowSeparator(.hidden)
