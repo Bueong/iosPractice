@@ -9,16 +9,14 @@ import SwiftUI
 
 struct SecondView: View {
     var body: some View {
-        NavigationView {
-            VStack(spacing: 30) {
-                NavigationLink {
-                    ThirdView()
-                } label: {
-                    Text("Third View")
-                }
+        VStack(spacing: 30) {
+            NavigationLink {
+                ThirdView()
+            } label: {
+                Text("Third View")
             }
-            .navigationTitle("Second View")
         }
+        .navigationTitle("Second View")
     }
 }
 
