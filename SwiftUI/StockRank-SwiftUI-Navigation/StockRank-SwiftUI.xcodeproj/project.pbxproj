@@ -17,6 +17,7 @@
 		9486F0C528386AC20069AEB0 /* StockRank_SwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9486F0C428386AC20069AEB0 /* StockRank_SwiftUIUITestsLaunchTests.swift */; };
 		9486F0D228386AE60069AEB0 /* StockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9486F0D128386AE60069AEB0 /* StockModel.swift */; };
 		DB4EF00229C78FB100678F8A /* StockDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4EF00129C78FB100678F8A /* StockDetailView.swift */; };
+		DBE9BB1F29C8D1790056D724 /* StockRankViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE9BB1E29C8D1790056D724 /* StockRankViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		9486F0C428386AC20069AEB0 /* StockRank_SwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockRank_SwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9486F0D128386AE60069AEB0 /* StockModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockModel.swift; sourceTree = "<group>"; };
 		DB4EF00129C78FB100678F8A /* StockDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailView.swift; sourceTree = "<group>"; };
+		DBE9BB1E29C8D1790056D724 /* StockRankViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockRankViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,9 +102,10 @@
 		9486F0A628386AC10069AEB0 /* StockRank-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				9486F0A728386AC10069AEB0 /* StockRank_SwiftUIApp.swift */,
 				9486F0D128386AE60069AEB0 /* StockModel.swift */,
+				9486F0A728386AC10069AEB0 /* StockRank_SwiftUIApp.swift */,
 				9486F0A928386AC10069AEB0 /* StockRankView.swift */,
+				DBE9BB1E29C8D1790056D724 /* StockRankViewModel.swift */,
 				943FC92B2847038200CF742D /* StockRankRow.swift */,
 				DB4EF00129C78FB100678F8A /* StockDetailView.swift */,
 				9486F0AB28386AC20069AEB0 /* Assets.xcassets */,
@@ -271,6 +274,7 @@
 				943FC92C2847038200CF742D /* StockRankRow.swift in Sources */,
 				9486F0A828386AC10069AEB0 /* StockRank_SwiftUIApp.swift in Sources */,
 				9486F0D228386AE60069AEB0 /* StockModel.swift in Sources */,
+				DBE9BB1F29C8D1790056D724 /* StockRankViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

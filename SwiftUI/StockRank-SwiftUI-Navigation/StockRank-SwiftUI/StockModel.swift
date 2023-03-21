@@ -9,11 +9,14 @@ import Foundation
 
 struct StockModel: Hashable, Identifiable {
     let id: UUID = UUID()
+    
     let rank: Int
     let imageName: String
     let name: String
     let price: Int
     let diff: Double
+    
+    var isFavorite: Bool = false
 }
 
 extension StockModel {
