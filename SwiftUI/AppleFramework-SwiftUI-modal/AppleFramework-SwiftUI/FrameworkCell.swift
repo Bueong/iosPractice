@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct FrameworkCell: View {
-    
     @Binding var framework: AppleFramework
     
     var body: some View {

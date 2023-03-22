@@ -2,18 +2,19 @@
 //  FrameworkDetailView.swift
 //  AppleFramework-SwiftUI
 //
-//  Created by 박철진 on 2023/03/21.
+//  Created by joonwon lee on 2022/06/15.
 //
 
 import SwiftUI
 
 struct FrameworkDetailView: View {
-    @StateObject var viewModel: FrameworkDetailViewModel
+    
+    @StateObject var viewModel: FrameworkDetailViewModelSwiftUI
     
     var body: some View {
         VStack(spacing: 30) {
-            Spacer()
             
+            Spacer()
             Image(viewModel.framework.imageName)
                 .resizable()
                 .frame(width: 90, height: 90)
@@ -27,7 +28,7 @@ struct FrameworkDetailView: View {
             Button {
                 viewModel.isSafariPresented = true
             } label: {
-                Text("learn More")
+                Text("Learn More")
                     .font(.system(size: 20, weight: .bold, design: .default))
                     .foregroundColor(.white)
             }
@@ -45,7 +46,7 @@ struct FrameworkDetailView: View {
 
 struct FrameworkDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        let vm = FrameworkDetailViewModel(framework: AppleFramework.list[0])
+        let vm = FrameworkDetailViewModelSwiftUI(framework: AppleFramework.list[0])
         FrameworkDetailView(viewModel: vm)
     }
 }

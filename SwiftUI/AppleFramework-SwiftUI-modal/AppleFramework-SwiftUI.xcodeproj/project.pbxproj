@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		71A8CA9529C9FC5000B13E4F /* FrameworkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A8CA9429C9FC5000B13E4F /* FrameworkDetailView.swift */; };
 		71A8CA9729CA004F00B13E4F /* FrameworkListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A8CA9629CA004F00B13E4F /* FrameworkListViewModel.swift */; };
+		71A8CA9929CB4F3800B13E4F /* FrameworkDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A8CA9829CB4F3800B13E4F /* FrameworkDetailViewModel.swift */; };
 		943FC92E2847177700CF742D /* FrameworkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943FC92D2847177700CF742D /* FrameworkCell.swift */; };
 		94768D4B2858DEB300F507E4 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94768D4A2858DEB300F507E4 /* SafariView.swift */; };
 		9486F0E2283883B30069AEB0 /* AppleFramework_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9486F0E1283883B30069AEB0 /* AppleFramework_SwiftUIApp.swift */; };
@@ -41,6 +42,7 @@
 /* Begin PBXFileReference section */
 		71A8CA9429C9FC5000B13E4F /* FrameworkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailView.swift; sourceTree = "<group>"; };
 		71A8CA9629CA004F00B13E4F /* FrameworkListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkListViewModel.swift; sourceTree = "<group>"; };
+		71A8CA9829CB4F3800B13E4F /* FrameworkDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailViewModel.swift; sourceTree = "<group>"; };
 		943FC92D2847177700CF742D /* FrameworkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkCell.swift; sourceTree = "<group>"; };
 		94768D4A2858DEB300F507E4 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 		9486F0DE283883B30069AEB0 /* AppleFramework-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AppleFramework-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,6 +110,7 @@
 				9486F0E3283883B30069AEB0 /* FrameworkListView.swift */,
 				71A8CA9629CA004F00B13E4F /* FrameworkListViewModel.swift */,
 				71A8CA9429C9FC5000B13E4F /* FrameworkDetailView.swift */,
+				71A8CA9829CB4F3800B13E4F /* FrameworkDetailViewModel.swift */,
 				943FC92D2847177700CF742D /* FrameworkCell.swift */,
 				9486F10B283883D60069AEB0 /* FramewokData.swift */,
 				94768D4A2858DEB300F507E4 /* SafariView.swift */,
@@ -278,6 +281,7 @@
 				71A8CA9529C9FC5000B13E4F /* FrameworkDetailView.swift in Sources */,
 				9486F10C283883D60069AEB0 /* FramewokData.swift in Sources */,
 				9486F0E2283883B30069AEB0 /* AppleFramework_SwiftUIApp.swift in Sources */,
+				71A8CA9929CB4F3800B13E4F /* FrameworkDetailViewModel.swift in Sources */,
 				94768D4B2858DEB300F507E4 /* SafariView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
