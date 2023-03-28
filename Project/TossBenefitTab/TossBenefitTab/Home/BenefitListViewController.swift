@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Combine
 
 class BenefitListViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
@@ -19,12 +20,26 @@ class BenefitListViewController: UIViewController {
     
     var datasource: UICollectionViewDiffableDataSource<Section, Item>!
     
-    var todaySectionItems: [AnyHashable] = TodaySectionItem(point: .default, today: .today).sectionItems
-    var otherSectionItems: [AnyHashable] = Benefit.others
+//    var todaySectionItems: [AnyHashable] = TodaySectionItem(point: .default, today: .today).sectionItems
+//    var otherSectionItems: [AnyHashable] = Benefit.others
+    
+    @Published var todaySectionItems: [AnyHashable] = []
+    @Published var otherSectionItems: [AnyHashable] = []
+    
+    var subscriptions = Set<AnyCancellable>()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setupUI()
+        configureCollectionView()
+        bind()
+    }
+    
+    private func setupUI() {
+        navigationItem.title = "혜택"
+    }
+    
+    private func configureCollectionView() {
         datasource = UICollectionViewDiffableDataSource<Section, Item>(collectionView: collectionView , cellProvider: { collectionView, indexPath, itemIdentifier in
             guard let section = Section(rawValue: indexPath.section) else { return nil }
             let cell = self.configureCell(for: section, item: itemIdentifier, collectionView: collectionView, indexPath: indexPath)
@@ -39,8 +54,39 @@ class BenefitListViewController: UIViewController {
         
         collectionView.collectionViewLayout = layout()
         collectionView.delegate = self
+    }
+    
+    //네트워크 상 데이터가 지연되어 들어올 때 가정
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         
-        navigationItem.title = "혜택"
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            self.todaySectionItems = TodaySectionItem(point: .default, today: .today).sectionItems
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
+            self.otherSectionItems = Benefit.others
+        }
+    }
+    
+    private func bind() {
+        $todaySectionItems
+            .receive(on: RunLoop.main)
+            .sink { items in
+                self.applySnapshot(items: items, section: .today)
+            }.store(in: &subscriptions)
+        
+        $otherSectionItems
+            .receive(on: RunLoop.main)
+            .sink { items in
+                self.applySnapshot(items: items, section: .other)
+            }.store(in: &subscriptions)
+    }
+    
+    private func applySnapshot(items: [Item], section: Section) {
+        var snapshot = datasource.snapshot()
+        snapshot.appendItems(items, toSection: section)
+        datasource.apply(snapshot)
     }
     
     private func configureCell(for section: Section, item: Item, collectionView: UICollectionView, indexPath: IndexPath) -> UICollectionViewCell? {
@@ -95,7 +141,11 @@ extension BenefitListViewController: UICollectionViewDelegate {
         print("---> \(item)")
         
         if let benefit = item as? Benefit {
+            let sb = UIStoryboard(name: "ButtonBenefit", bundle: nil)
+            let vc = sb.instantiateViewController(withIdentifier: "ButtonBenefitViewController") as! ButtonBenefitViewController
             
+            vc.benefit = benefit
+            navigationController?.pushViewController(vc, animated: true)
         } else if let point = item as? MyPoint {
             let sb = UIStoryboard(name: "MyPoint", bundle: nil)
             let vc = sb.instantiateViewController(withIdentifier: "MyPointViewController") as! MyPointViewController

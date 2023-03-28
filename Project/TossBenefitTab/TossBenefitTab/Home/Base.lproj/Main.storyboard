@@ -174,8 +174,8 @@
                         <constraints>
                             <constraint firstItem="GUm-pD-XRg" firstAttribute="bottom" secondItem="mWB-9d-jtI" secondAttribute="bottom" id="D6D-jJ-v98"/>
                             <constraint firstItem="mWB-9d-jtI" firstAttribute="top" secondItem="GUm-pD-XRg" secondAttribute="top" id="JbM-Pe-Cgg"/>
-                            <constraint firstItem="GUm-pD-XRg" firstAttribute="trailing" secondItem="mWB-9d-jtI" secondAttribute="trailing" id="PEH-Tc-1zC"/>
                             <constraint firstItem="mWB-9d-jtI" firstAttribute="leading" secondItem="GUm-pD-XRg" secondAttribute="leading" id="Vor-5f-VN3"/>
+                            <constraint firstItem="GUm-pD-XRg" firstAttribute="trailing" secondItem="mWB-9d-jtI" secondAttribute="trailing" id="ZiR-c2-veT"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="CZT-tK-0QH"/>

@@ -13,9 +13,13 @@
 		7115352329CC980900B98892 /* MyPointCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7115352229CC980900B98892 /* MyPointCell.swift */; };
 		7115352529CC981600B98892 /* TodayBenefitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7115352429CC981600B98892 /* TodayBenefitCell.swift */; };
 		7115352729CC982200B98892 /* BenefitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7115352629CC982200B98892 /* BenefitCell.swift */; };
+		714CBF9829D25C22008990ED /* BenefitGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714CBF9729D25C22008990ED /* BenefitGuideView.swift */; };
 		71A4E72829CCA6BD0015F649 /* TodaySectionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A4E72729CCA6BD0015F649 /* TodaySectionItem.swift */; };
 		71B9F38B29D0A8CC00DE78F7 /* MyPoint.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71B9F38A29D0A8CC00DE78F7 /* MyPoint.storyboard */; };
 		71B9F38E29D0A94700DE78F7 /* MyPointViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B9F38D29D0A94700DE78F7 /* MyPointViewController.swift */; };
+		71FD64F229D20515005C0134 /* ButtonBenefit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71FD64F129D20515005C0134 /* ButtonBenefit.storyboard */; };
+		71FD64F429D2051E005C0134 /* ButtonBenefitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FD64F329D2051E005C0134 /* ButtonBenefitViewController.swift */; };
+		71FD64F729D2058F005C0134 /* BenefitDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FD64F629D2058F005C0134 /* BenefitDetails.swift */; };
 		94BD3356285D5C9E008DA3B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BD3355285D5C9E008DA3B7 /* AppDelegate.swift */; };
 		94BD3358285D5C9E008DA3B7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BD3357285D5C9E008DA3B7 /* SceneDelegate.swift */; };
 		94BD335D285D5C9E008DA3B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94BD335B285D5C9E008DA3B7 /* Main.storyboard */; };
@@ -50,9 +54,13 @@
 		7115352229CC980900B98892 /* MyPointCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPointCell.swift; sourceTree = "<group>"; };
 		7115352429CC981600B98892 /* TodayBenefitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayBenefitCell.swift; sourceTree = "<group>"; };
 		7115352629CC982200B98892 /* BenefitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenefitCell.swift; sourceTree = "<group>"; };
+		714CBF9729D25C22008990ED /* BenefitGuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenefitGuideView.swift; sourceTree = "<group>"; };
 		71A4E72729CCA6BD0015F649 /* TodaySectionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodaySectionItem.swift; sourceTree = "<group>"; };
 		71B9F38A29D0A8CC00DE78F7 /* MyPoint.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPoint.storyboard; sourceTree = "<group>"; };
 		71B9F38D29D0A94700DE78F7 /* MyPointViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPointViewController.swift; sourceTree = "<group>"; };
+		71FD64F129D20515005C0134 /* ButtonBenefit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ButtonBenefit.storyboard; sourceTree = "<group>"; };
+		71FD64F329D2051E005C0134 /* ButtonBenefitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonBenefitViewController.swift; sourceTree = "<group>"; };
+		71FD64F629D2058F005C0134 /* BenefitDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenefitDetails.swift; sourceTree = "<group>"; };
 		94BD3352285D5C9E008DA3B7 /* TossBenefitTab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TossBenefitTab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94BD3355285D5C9E008DA3B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94BD3357285D5C9E008DA3B7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				7115351C29CC95C300B98892 /* Benefit.swift */,
+				71FD64F629D2058F005C0134 /* BenefitDetails.swift */,
 				7115351E29CC95CA00B98892 /* MyPoint.swift */,
 				71A4E72729CCA6BD0015F649 /* TodaySectionItem.swift */,
 			);
@@ -123,6 +132,16 @@
 			path = MyPoint;
 			sourceTree = "<group>";
 		};
+		71FD64F529D20523005C0134 /* Benefit */ = {
+			isa = PBXGroup;
+			children = (
+				71FD64F129D20515005C0134 /* ButtonBenefit.storyboard */,
+				71FD64F329D2051E005C0134 /* ButtonBenefitViewController.swift */,
+				714CBF9729D25C22008990ED /* BenefitGuideView.swift */,
+			);
+			path = Benefit;
+			sourceTree = "<group>";
+		};
 		94BD3349285D5C9E008DA3B7 = {
 			isa = PBXGroup;
 			children = (
@@ -148,8 +167,9 @@
 			children = (
 				94BD3355285D5C9E008DA3B7 /* AppDelegate.swift */,
 				94BD3357285D5C9E008DA3B7 /* SceneDelegate.swift */,
-				71B9F38C29D0A8D800DE78F7 /* MyPoint */,
 				7115352129CC95E900B98892 /* Home */,
+				71B9F38C29D0A8D800DE78F7 /* MyPoint */,
+				71FD64F529D20523005C0134 /* Benefit */,
 				7115352029CC95D700B98892 /* Model */,
 				94BD335E285D5CA1008DA3B7 /* Assets.xcassets */,
 				94BD3360285D5CA1008DA3B7 /* LaunchScreen.storyboard */,
@@ -282,6 +302,7 @@
 				94BD3362285D5CA1008DA3B7 /* LaunchScreen.storyboard in Resources */,
 				71B9F38B29D0A8CC00DE78F7 /* MyPoint.storyboard in Resources */,
 				94BD335F285D5CA1008DA3B7 /* Assets.xcassets in Resources */,
+				71FD64F229D20515005C0134 /* ButtonBenefit.storyboard in Resources */,
 				94BD335D285D5C9E008DA3B7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,10 +334,13 @@
 				7115351B29CC935200B98892 /* BenefitListViewController.swift in Sources */,
 				7115351D29CC95C300B98892 /* Benefit.swift in Sources */,
 				7115352529CC981600B98892 /* TodayBenefitCell.swift in Sources */,
+				71FD64F429D2051E005C0134 /* ButtonBenefitViewController.swift in Sources */,
 				94BD3356285D5C9E008DA3B7 /* AppDelegate.swift in Sources */,
 				7115352329CC980900B98892 /* MyPointCell.swift in Sources */,
 				94BD3358285D5C9E008DA3B7 /* SceneDelegate.swift in Sources */,
+				71FD64F729D2058F005C0134 /* BenefitDetails.swift in Sources */,
 				71B9F38E29D0A94700DE78F7 /* MyPointViewController.swift in Sources */,
+				714CBF9829D25C22008990ED /* BenefitGuideView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
