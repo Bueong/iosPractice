@@ -14,6 +14,9 @@
 		7115352529CC981600B98892 /* TodayBenefitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7115352429CC981600B98892 /* TodayBenefitCell.swift */; };
 		7115352729CC982200B98892 /* BenefitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7115352629CC982200B98892 /* BenefitCell.swift */; };
 		714CBF9829D25C22008990ED /* BenefitGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714CBF9729D25C22008990ED /* BenefitGuideView.swift */; };
+		714CBF9A29D2CAFC008990ED /* BenefitListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714CBF9929D2CAFC008990ED /* BenefitListViewModel.swift */; };
+		714CBF9C29D2CD95008990ED /* MyPointViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714CBF9B29D2CD95008990ED /* MyPointViewModel.swift */; };
+		714CBF9E29D2CF3B008990ED /* ButtonBenefitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714CBF9D29D2CF3B008990ED /* ButtonBenefitViewModel.swift */; };
 		71A4E72829CCA6BD0015F649 /* TodaySectionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A4E72729CCA6BD0015F649 /* TodaySectionItem.swift */; };
 		71B9F38B29D0A8CC00DE78F7 /* MyPoint.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71B9F38A29D0A8CC00DE78F7 /* MyPoint.storyboard */; };
 		71B9F38E29D0A94700DE78F7 /* MyPointViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B9F38D29D0A94700DE78F7 /* MyPointViewController.swift */; };
@@ -55,6 +58,9 @@
 		7115352429CC981600B98892 /* TodayBenefitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayBenefitCell.swift; sourceTree = "<group>"; };
 		7115352629CC982200B98892 /* BenefitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenefitCell.swift; sourceTree = "<group>"; };
 		714CBF9729D25C22008990ED /* BenefitGuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenefitGuideView.swift; sourceTree = "<group>"; };
+		714CBF9929D2CAFC008990ED /* BenefitListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenefitListViewModel.swift; sourceTree = "<group>"; };
+		714CBF9B29D2CD95008990ED /* MyPointViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPointViewModel.swift; sourceTree = "<group>"; };
+		714CBF9D29D2CF3B008990ED /* ButtonBenefitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonBenefitViewModel.swift; sourceTree = "<group>"; };
 		71A4E72729CCA6BD0015F649 /* TodaySectionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodaySectionItem.swift; sourceTree = "<group>"; };
 		71B9F38A29D0A8CC00DE78F7 /* MyPoint.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPoint.storyboard; sourceTree = "<group>"; };
 		71B9F38D29D0A94700DE78F7 /* MyPointViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPointViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +122,7 @@
 			children = (
 				94BD335B285D5C9E008DA3B7 /* Main.storyboard */,
 				7115351A29CC935200B98892 /* BenefitListViewController.swift */,
+				714CBF9929D2CAFC008990ED /* BenefitListViewModel.swift */,
 				7115352229CC980900B98892 /* MyPointCell.swift */,
 				7115352429CC981600B98892 /* TodayBenefitCell.swift */,
 				7115352629CC982200B98892 /* BenefitCell.swift */,
@@ -128,6 +135,7 @@
 			children = (
 				71B9F38A29D0A8CC00DE78F7 /* MyPoint.storyboard */,
 				71B9F38D29D0A94700DE78F7 /* MyPointViewController.swift */,
+				714CBF9B29D2CD95008990ED /* MyPointViewModel.swift */,
 			);
 			path = MyPoint;
 			sourceTree = "<group>";
@@ -137,6 +145,7 @@
 			children = (
 				71FD64F129D20515005C0134 /* ButtonBenefit.storyboard */,
 				71FD64F329D2051E005C0134 /* ButtonBenefitViewController.swift */,
+				714CBF9D29D2CF3B008990ED /* ButtonBenefitViewModel.swift */,
 				714CBF9729D25C22008990ED /* BenefitGuideView.swift */,
 			);
 			path = Benefit;
@@ -336,8 +345,11 @@
 				7115352529CC981600B98892 /* TodayBenefitCell.swift in Sources */,
 				71FD64F429D2051E005C0134 /* ButtonBenefitViewController.swift in Sources */,
 				94BD3356285D5C9E008DA3B7 /* AppDelegate.swift in Sources */,
+				714CBF9A29D2CAFC008990ED /* BenefitListViewModel.swift in Sources */,
 				7115352329CC980900B98892 /* MyPointCell.swift in Sources */,
+				714CBF9C29D2CD95008990ED /* MyPointViewModel.swift in Sources */,
 				94BD3358285D5C9E008DA3B7 /* SceneDelegate.swift in Sources */,
+				714CBF9E29D2CF3B008990ED /* ButtonBenefitViewModel.swift in Sources */,
 				71FD64F729D2058F005C0134 /* BenefitDetails.swift in Sources */,
 				71B9F38E29D0A94700DE78F7 /* MyPointViewController.swift in Sources */,
 				714CBF9829D25C22008990ED /* BenefitGuideView.swift in Sources */,
