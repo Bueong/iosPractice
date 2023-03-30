@@ -15,6 +15,7 @@ final class DetailViewModel {
     }
     
     func fetch() {
+        let 
     }
     
 }
