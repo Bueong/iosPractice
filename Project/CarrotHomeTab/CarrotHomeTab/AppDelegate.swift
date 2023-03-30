@@ -1,9 +1,3 @@
-//
-//  AppDelegate.swift
-//  CarrotHomeTab
-//
-//  Created by 박철진 on 2023/03/29.
-//
 
 import UIKit
 

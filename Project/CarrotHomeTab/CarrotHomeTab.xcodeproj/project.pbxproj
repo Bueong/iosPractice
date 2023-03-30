@@ -7,8 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7113C0BE29D4E60E0058291F /* MainNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7113C0BD29D4E60E0058291F /* MainNavigationViewController.swift */; };
+		7113C0C029D4E6150058291F /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7113C0BF29D4E6150058291F /* MainTabBarController.swift */; };
 		712787A529D47A60007DA0A9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712787A429D47A60007DA0A9 /* HomeViewController.swift */; };
 		712787A729D47A79007DA0A9 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712787A629D47A79007DA0A9 /* DetailViewController.swift */; };
+		7130687529D4F2F000AC6955 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 719B57C629D4E5A600D3FE74 /* Detail.storyboard */; };
+		7130687829D4F4CE00AC6955 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7130687629D4F4CE00AC6955 /* Home.storyboard */; };
+		7130687A29D4F51B00AC6955 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7130687929D4F51B00AC6955 /* HomeViewModel.swift */; };
+		7130687C29D521F900AC6955 /* ItemInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7130687B29D521F900AC6955 /* ItemInfoCell.swift */; };
+		715533C529D588AB0060444F /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 715533C429D588AB0060444F /* Kingfisher */; };
+		719B57B829D4B96600D3FE74 /* MyTownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719B57B729D4B96600D3FE74 /* MyTownViewController.swift */; };
+		719B57BA29D4B97200D3FE74 /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719B57B929D4B97200D3FE74 /* MyProfileViewController.swift */; };
+		719B57BC29D4B97800D3FE74 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719B57BB29D4B97800D3FE74 /* ChatViewController.swift */; };
+		719B57BE29D4C35200D3FE74 /* CustomBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719B57BD29D4C35200D3FE74 /* CustomBarItem.swift */; };
+		719B57C029D4CCEF00D3FE74 /* UIBarButtonItem+CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719B57BF29D4CCEF00D3FE74 /* UIBarButtonItem+CustomView.swift */; };
+		71B0DCB729D5AF2C00530C60 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B0DCB629D5AF2C00530C60 /* DetailViewModel.swift */; };
+		71B0DCB929D5AF7700530C60 /* ItemInfoDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B0DCB829D5AF7700530C60 /* ItemInfoDetails.swift */; };
 		9402EE1128673D9C00D33FDD /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9402EE0F28673D9C00D33FDD /* NetworkService.swift */; };
 		9402EE1228673D9C00D33FDD /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9402EE1028673D9C00D33FDD /* Resource.swift */; };
 		9402EE1728673FB100D33FDD /* Publisher+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9402EE1628673FB100D33FDD /* Publisher+Utils.swift */; };
@@ -41,8 +55,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7113C0BD29D4E60E0058291F /* MainNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainNavigationViewController.swift; path = ../../../../../../Documents/MainNavigationViewController.swift; sourceTree = "<group>"; };
+		7113C0BF29D4E6150058291F /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainTabBarController.swift; path = ../../../../../../Documents/MainTabBarController.swift; sourceTree = "<group>"; };
 		712787A429D47A60007DA0A9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		712787A629D47A79007DA0A9 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		7130687729D4F4CE00AC6955 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = CarrotHomeTab/Views/Base.lproj/Home.storyboard; sourceTree = "<group>"; };
+		7130687929D4F51B00AC6955 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		7130687B29D521F900AC6955 /* ItemInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemInfoCell.swift; sourceTree = "<group>"; };
+		719B57B729D4B96600D3FE74 /* MyTownViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTownViewController.swift; sourceTree = "<group>"; };
+		719B57B929D4B97200D3FE74 /* MyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileViewController.swift; sourceTree = "<group>"; };
+		719B57BB29D4B97800D3FE74 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		719B57BD29D4C35200D3FE74 /* CustomBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBarItem.swift; sourceTree = "<group>"; };
+		719B57BF29D4CCEF00D3FE74 /* UIBarButtonItem+CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+CustomView.swift"; sourceTree = "<group>"; };
+		719B57C629D4E5A600D3FE74 /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
+		71B0DCB629D5AF2C00530C60 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		71B0DCB829D5AF7700530C60 /* ItemInfoDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemInfoDetails.swift; sourceTree = "<group>"; };
 		9402EE0F28673D9C00D33FDD /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		9402EE1028673D9C00D33FDD /* Resource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
 		9402EE1628673FB100D33FDD /* Publisher+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Publisher+Utils.swift"; sourceTree = "<group>"; };
@@ -66,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				715533C529D588AB0060444F /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +114,71 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		719B57C129D4E54500D3FE74 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				7130687629D4F4CE00AC6955 /* Home.storyboard */,
+				7130687929D4F51B00AC6955 /* HomeViewModel.swift */,
+				712787A429D47A60007DA0A9 /* HomeViewController.swift */,
+				7130687B29D521F900AC6955 /* ItemInfoCell.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		719B57C229D4E54F00D3FE74 /* MyTown */ = {
+			isa = PBXGroup;
+			children = (
+				719B57B729D4B96600D3FE74 /* MyTownViewController.swift */,
+			);
+			path = MyTown;
+			sourceTree = "<group>";
+		};
+		719B57C329D4E55600D3FE74 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				719B57BB29D4B97800D3FE74 /* ChatViewController.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		719B57C429D4E55A00D3FE74 /* MyProfile */ = {
+			isa = PBXGroup;
+			children = (
+				719B57B929D4B97200D3FE74 /* MyProfileViewController.swift */,
+			);
+			path = MyProfile;
+			sourceTree = "<group>";
+		};
+		719B57C529D4E5A600D3FE74 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				719B57C629D4E5A600D3FE74 /* Detail.storyboard */,
+				71B0DCB629D5AF2C00530C60 /* DetailViewModel.swift */,
+				71B0DCB829D5AF7700530C60 /* ItemInfoDetails.swift */,
+				712787A629D47A79007DA0A9 /* DetailViewController.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		719B57C729D4E5B000D3FE74 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				719B57BF29D4CCEF00D3FE74 /* UIBarButtonItem+CustomView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		719B57C829D4E5CE00D3FE74 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				94A38E57286830EA000691E1 /* Main.storyboard */,
+				7113C0BD29D4E60E0058291F /* MainNavigationViewController.swift */,
+				7113C0BF29D4E6150058291F /* MainTabBarController.swift */,
+				719B57BD29D4C35200D3FE74 /* CustomBarItem.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		9402EE0E28673D9C00D33FDD /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -136,9 +229,13 @@
 			children = (
 				94BB227D28669A15004FC34D /* AppDelegate.swift */,
 				94BB227F28669A15004FC34D /* SceneDelegate.swift */,
-				94A38E57286830EA000691E1 /* Main.storyboard */,
-				712787A429D47A60007DA0A9 /* HomeViewController.swift */,
-				712787A629D47A79007DA0A9 /* DetailViewController.swift */,
+				719B57C829D4E5CE00D3FE74 /* Views */,
+				719B57C129D4E54500D3FE74 /* Home */,
+				719B57C229D4E54F00D3FE74 /* MyTown */,
+				719B57C329D4E55600D3FE74 /* Chat */,
+				719B57C429D4E55A00D3FE74 /* MyProfile */,
+				719B57C729D4E5B000D3FE74 /* Extensions */,
+				719B57C529D4E5A600D3FE74 /* Detail */,
 				9402EE1528673FB100D33FDD /* Utils */,
 				9402EE0E28673D9C00D33FDD /* Network */,
 				94A38E4B2868307C000691E1 /* Model */,
@@ -183,6 +280,7 @@
 			);
 			name = CarrotHomeTab;
 			packageProductDependencies = (
+				715533C429D588AB0060444F /* Kingfisher */,
 			);
 			productName = CarrotHomeTab;
 			productReference = 94BB227A28669A15004FC34D /* CarrotHomeTab.app */;
@@ -257,6 +355,7 @@
 			);
 			mainGroup = 94BB227128669A15004FC34D;
 			packageReferences = (
+				715533C329D588AB0060444F /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 94BB227B28669A15004FC34D /* Products */;
 			projectDirPath = "";
@@ -275,8 +374,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				94BB228A28669A16004FC34D /* LaunchScreen.storyboard in Resources */,
+				7130687829D4F4CE00AC6955 /* Home.storyboard in Resources */,
 				94A38E5C286830EA000691E1 /* Main.storyboard in Resources */,
 				94BB228728669A16004FC34D /* Assets.xcassets in Resources */,
+				7130687529D4F2F000AC6955 /* Detail.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,11 +405,22 @@
 				94BB227E28669A15004FC34D /* AppDelegate.swift in Sources */,
 				94A38E512868307C000691E1 /* ItemInfo.swift in Sources */,
 				94BB228028669A15004FC34D /* SceneDelegate.swift in Sources */,
+				7130687A29D4F51B00AC6955 /* HomeViewModel.swift in Sources */,
+				7113C0BE29D4E60E0058291F /* MainNavigationViewController.swift in Sources */,
 				9402EE1728673FB100D33FDD /* Publisher+Utils.swift in Sources */,
+				719B57BA29D4B97200D3FE74 /* MyProfileViewController.swift in Sources */,
 				9402EE1128673D9C00D33FDD /* NetworkService.swift in Sources */,
 				712787A529D47A60007DA0A9 /* HomeViewController.swift in Sources */,
+				719B57BC29D4B97800D3FE74 /* ChatViewController.swift in Sources */,
+				71B0DCB929D5AF7700530C60 /* ItemInfoDetails.swift in Sources */,
+				719B57B829D4B96600D3FE74 /* MyTownViewController.swift in Sources */,
+				719B57BE29D4C35200D3FE74 /* CustomBarItem.swift in Sources */,
+				719B57C029D4CCEF00D3FE74 /* UIBarButtonItem+CustomView.swift in Sources */,
+				71B0DCB729D5AF2C00530C60 /* DetailViewModel.swift in Sources */,
 				9402EE1228673D9C00D33FDD /* Resource.swift in Sources */,
 				712787A729D47A79007DA0A9 /* DetailViewController.swift in Sources */,
+				7130687C29D521F900AC6955 /* ItemInfoCell.swift in Sources */,
+				7113C0C029D4E6150058291F /* MainTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +457,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		7130687629D4F4CE00AC6955 /* Home.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7130687729D4F4CE00AC6955 /* Base */,
+			);
+			name = Home.storyboard;
+			sourceTree = "<group>";
+		};
 		94A38E57286830EA000691E1 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -650,6 +770,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		715533C329D588AB0060444F /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		715533C429D588AB0060444F /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 715533C329D588AB0060444F /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 94BB227228669A15004FC34D /* Project object */;
 }

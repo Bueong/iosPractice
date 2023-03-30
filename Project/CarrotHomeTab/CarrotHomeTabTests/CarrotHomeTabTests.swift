@@ -1,9 +1,3 @@
-//
-//  CarrotHomeTabTests.swift
-//  CarrotHomeTabTests
-//
-//  Created by joonwon lee on 2022/06/25.
-//
 
 import XCTest
 @testable import CarrotHomeTab

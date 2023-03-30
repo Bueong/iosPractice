@@ -1,13 +1,13 @@
 //
-//  HomeViewController.swift
+//  ChatViewController.swift
 //  CarrotHomeTab
 //
-//  Created by 박철진 on 2023/03/29.
+//  Created by 박철진 on 2023/03/30.
 //
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class ChatViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

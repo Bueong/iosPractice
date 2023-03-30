@@ -1,13 +1,13 @@
 //
-//  DetailViewController.swift
+//  MyProfileViewController.swift
 //  CarrotHomeTab
 //
-//  Created by 박철진 on 2023/03/29.
+//  Created by 박철진 on 2023/03/30.
 //
 
 import UIKit
 
-class DetailViewController: UIViewController {
+class MyProfileViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
