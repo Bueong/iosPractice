@@ -54,7 +54,7 @@ class HomeViewController: UIViewController {
             .sink { item in
                 let sb = UIStoryboard(name: "Detail", bundle: nil)
                 let vc = sb.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
-                
+                vc.viewModel = De
                 self.navigationController?.pushViewController(vc, animated: true)
             }.store(in: &subscriptions)
     }

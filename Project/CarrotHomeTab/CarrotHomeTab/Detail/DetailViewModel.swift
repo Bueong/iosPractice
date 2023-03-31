@@ -15,7 +15,9 @@ final class DetailViewModel {
     }
     
     func fetch() {
-        let 
+        DispatchQueue.global().asyncAfter(deadline: .now() + 1.5) {
+            self.itemInfoDetails = ItemInfoDetails()
+        }
     }
     
 }
