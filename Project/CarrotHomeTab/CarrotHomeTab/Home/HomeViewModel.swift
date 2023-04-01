@@ -6,9 +6,9 @@ final class HomeViewModel {
     let network: NetworkService
     
     @Published var items: [ItemInfo] = []
-    var subscriptions = Set<AnyCancellable>()
     
     let itemTapped = PassthroughSubject<ItemInfo, Never>()
+    var subscriptions = Set<AnyCancellable>()
     
     init(network: NetworkService) {
         self.network = network

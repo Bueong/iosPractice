@@ -20,7 +20,7 @@ class ItemInfoCell: UICollectionViewCell {
     func configure(item: ItemInfo) {
         titleLabel.text = item.title
         descriptionLabel.text = item.location
-        priceLabel.text = "\(item.price)원"
+        priceLabel.text = "\(self.formatNumber(item.price))원"
         numOfChatLabel.text = "\(item.numOfChats)"
         numOfLikeLabel.text = "\(item.numOfLikes)"
         
